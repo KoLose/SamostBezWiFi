@@ -1,0 +1,30 @@
+﻿<Window x:Class="SamostBezWiFi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SamostBezWiFi"
+        mc:Ignorable="d"
+        FontSize="30"
+        Background="orange"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Ваше имя" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBox Grid.Row="1" Text="" Width="500" Background="orange" x:Name="Name"></TextBox>
+        <TextBlock Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Ваша электронная почта"></TextBlock>
+        <TextBox Grid.Row="3" Text="" Width="500" Background="orange" x:Name="Mail"></TextBox>
+        <TextBlock Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Поле для сообщения"></TextBlock>
+        <TextBox Grid.Row="5" Width="500" Background="orange" AcceptsReturn="True" x:Name="Message"></TextBox>
+        <Button  Grid.Row="6" Content="Отправить" Click="Button_Click" ></Button>
+    </Grid>
+</Window>
